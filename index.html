@@ -1,33 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pogil Plugin</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main>
-      <div>
-        <h1>Pogil-Plugin</h1>
-      </div>
-      <div>
-        <h2>Code</h2>
-        <a href="https://github.com/PogilPlugin/MicrosoftWordPlugin"
-          >https://github.com/PogilPlugin/MicrosoftWordPlugin</a
-        >
-      </div>
-      <div>
-        <h2>Team</h2>
-        <p>Eli Lewis</p>
-        <p>Yigit Turan</p>
-      </div>
-      <div>
-        <h2>Advisor</h2>
-        <p>Victor Norman</p>
-      </div>
-      <div>
-        <h2>Proposal</h2>
-        <a href="./proposal.pdf">proposal.pdf</a>
-      </div>
-    </main>
+    <header>
+      <h1>Pogil Plugin</h1>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#" onclick="showContent('code')">Code</a></li>
+          <li><a href="#" onclick="showContent('team')">Team</a></li>
+          <li><a href="#" onclick="showContent('advisor')">Advisor</a></li>
+          <li><a href="#" onclick="showContent('proposal')">Proposal</a></li>
+        </ul>
+      </nav>
+      <main class="content" id="content-area">
+        <section id="welcome">
+          <h2>Welcome to Microsoft Word Pogil Plugin</h2>
+          <p>Please select a section from the left to see more details.</p>
+        </section>
+        <section id="code" class="hidden">
+          <h2>Code</h2>
+          <button onclick="window.open('https://github.com/PogilPlugin/MicrosoftWordPlugin', '_blank')">
+            View GitHub Repository
+          </button>
+        </section>
+        <section id="team" class="hidden">
+          <h2>Team</h2>
+          <ul>
+            <li>
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQFkhQBsLfU1LA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728048527868?e=1738195200&v=beta&t=rND3RsJCag_YY-QB0iX5pzvUv5xgEnCLJveX4OAdLD4"
+                alt="Eli Lewis"
+                class="profile-picture"
+              />
+              Eli Lewis
+            </li>
+            <li>
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQGjj_x66Ls2mA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723754511303?e=1738195200&v=beta&t=6usYa0SvWDqAM6WdX9MlJFdWtYuF4Aszog_lr6odpbU"
+                alt="Yigit Turan"
+                class="profile-picture"
+              />
+              Yigit Turan
+            </li>
+          </ul>
+        </section>
+        <section id="advisor" class="hidden">
+          <h2>Advisor</h2>
+          <div class="advisor">
+            <img
+              src="https://scontent.fdet1-1.fna.fbcdn.net/v/t1.6435-9/50183008_10157106130684446_7749875676513042432_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=2pBObzK2hcwQ7kNvgGz2HWo&_nc_zt=23&_nc_ht=scontent.fdet1-1.fna&_nc_gid=AH8b6kAfyw2q4qu4aiSWMJi&oh=00_AYBGIr0kFeO0UV4jQGrxYiSvs7CsvV75ssCxA8Zu3JQ8RA&oe=676D6156"
+              alt="Victor Norman"
+              class="profile-picture"
+            />
+            <p>Victor Norman</p>
+          </div>
+        </section>
+        <section id="proposal" class="hidden">
+          <h2>Proposal</h2>
+          <button onclick="window.open('./proposal.pdf', '_blank')">
+            Download Proposal
+          </button>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
