@@ -1,0 +1,30 @@
+.sidebar {
+    background-color: #292b2c;
+    padding: 15px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #0078d7;
+  }
+  

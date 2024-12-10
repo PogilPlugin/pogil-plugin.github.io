@@ -1,0 +1,62 @@
+/* Layout container */
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5; /* Light gray background for better contrast */
+}
+
+/* Content area */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px); /* Adjust width to account for the sidebar */
+  background-color: #ffffff; /* White background for content */
+  color: #333333; /* Dark gray text for comfortable reading */
+  overflow-y: auto;
+  font-family: 'Arial', sans-serif; /* Clean and readable font */
+  line-height: 1.6; /* Improved line spacing for readability */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #001f3f; /* Lacivert (dark blue) color */
+  color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.sidebar a:hover {
+  background-color: #0056b3; /* Slightly lighter blue on hover */
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

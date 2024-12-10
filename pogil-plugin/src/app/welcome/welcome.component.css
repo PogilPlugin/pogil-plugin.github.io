@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light gray background for better contrast */
+  color: #333333; /* Dark gray text for comfortable reading */
+}
+
+.welcome-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  text-align: center;
+  color: #001f3f; /* Lacivert (dark blue) color for headings */
+}
+
+h2 {
+  margin-top: 20px;
+  color: #0056b3; /* Slightly lighter blue for subheadings */
+}
+
+p, li {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.features ul, .instructions ol {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.features ul li, .instructions ol li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+}

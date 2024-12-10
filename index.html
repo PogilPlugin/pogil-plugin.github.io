@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Pogil Plugin</h1>
+    <header class="hero">
+      <div class="hero-overlay">
+        <h1>Pogil Plugin</h1>
+        <p>Your gateway to collaborative learning in Microsoft Word</p>
+        <button onclick="window.open('https://github.com/PogilPlugin/MicrosoftWordPlugin', '_blank')">
+          Explore GitHub
+        </button>
+      </div>
     </header>
     <div class="container">
       <nav class="sidebar">
         <ul>
+          <li><a href="#" onclick="showContent('welcome')">Home</a></li>
           <li><a href="#" onclick="showContent('code')">Code</a></li>
           <li><a href="#" onclick="showContent('team')">Team</a></li>
           <li><a href="#" onclick="showContent('advisor')">Advisor</a></li>
@@ -21,8 +28,8 @@
       </nav>
       <main class="content" id="content-area">
         <section id="welcome">
-          <h2>Welcome to Microsoft Word Pogil Plugin</h2>
-          <p>Please select a section from the left to see more details.</p>
+          <h2>Welcome to Pogil Plugin</h2>
+          <p>Discover the power of collaborative learning tools for educators and students.</p>
         </section>
         <section id="code" class="hidden">
           <h2>Code</h2>
@@ -31,34 +38,22 @@
           </button>
         </section>
         <section id="team" class="hidden">
-          <h2>Team</h2>
-          <ul>
+          <h2>Meet the Team</h2>
+          <ul class="team-list">
             <li>
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQFkhQBsLfU1LA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728048527868?e=1738195200&v=beta&t=rND3RsJCag_YY-QB0iX5pzvUv5xgEnCLJveX4OAdLD4"
-                alt="Eli Lewis"
-                class="profile-picture"
-              />
-              Eli Lewis
+              <img src="./images/eli.jpg" alt="Eli Lewis" class="profile-picture" />
+              <p>Eli Lewis</p>
             </li>
             <li>
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQGjj_x66Ls2mA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723754511303?e=1738195200&v=beta&t=6usYa0SvWDqAM6WdX9MlJFdWtYuF4Aszog_lr6odpbU"
-                alt="Yigit Turan"
-                class="profile-picture"
-              />
-              Yigit Turan
+              <img src="./images/yigit.jpg" alt="Yigit Turan" class="profile-picture" />
+              <p>Yigit Turan</p>
             </li>
           </ul>
         </section>
         <section id="advisor" class="hidden">
           <h2>Advisor</h2>
           <div class="advisor">
-            <img
-              src="https://scontent.fdet1-1.fna.fbcdn.net/v/t1.6435-9/50183008_10157106130684446_7749875676513042432_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=2pBObzK2hcwQ7kNvgGz2HWo&_nc_zt=23&_nc_ht=scontent.fdet1-1.fna&_nc_gid=AH8b6kAfyw2q4qu4aiSWMJi&oh=00_AYBGIr0kFeO0UV4jQGrxYiSvs7CsvV75ssCxA8Zu3JQ8RA&oe=676D6156"
-              alt="Victor Norman"
-              class="profile-picture"
-            />
+            <img src="./images/advisor.jpg" alt="Victor Norman" class="profile-picture" />
             <p>Victor Norman</p>
           </div>
         </section>
@@ -70,6 +65,9 @@
         </section>
       </main>
     </div>
+    <footer>
+      <p>&copy; 2024 Pogil Plugin Team. All rights reserved.</p>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
